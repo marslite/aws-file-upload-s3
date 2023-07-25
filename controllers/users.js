@@ -38,6 +38,7 @@ async function signup(req, res) {
       console.log('====================');
       res.status(400).json({error: 'error from aws, check your terminal'})
     }
+    //Works
     
     req.body.photoUrl = data.Location
     // data.Location is what we get back from aws of where Our file is stored
